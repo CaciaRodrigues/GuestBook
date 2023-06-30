@@ -1,0 +1,36 @@
+:root {
+    --main-font: 'Cormorant Garamond', serif;
+    --secondary-font: 'Dancing Script', cursive;
+    --pure-black: #000000;
+    --dark-gray: #181818;
+    --medium-gray: #282828;
+    --light-gray: #404048;
+    --main-red: #4a0814;
+    --pink-brown: #522D2D;
+    --light-pink-brown: #7A4343;
+    --blush-pink: #D5BDAF;
+    --darker-paper: #E6CCB2;
+    --lighter-paper: #EDE0D4;
+    --warm-white: #F5EBE0;
+    --white-gray: #EDEDE9;
+    --pure-white: #FFFFFF;
+
+}
+
+
+body {
+    background-color: var(--dark-gray);
+    display: flex;
+    justify-content: center;
+}
+
+.capa{
+    height: 80vh;
+    aspect-ratio: 6 / 4;
+    margin-top: 10vh;
+    background-color: var(--light-pink-brown);
+    border: 10px solid var(--pink-brown);
+    border-radius: 5px;
+    box-shadow: inset 6px 6px 10px var(--pink-brown), inset -6px -6px 10px var(--pink-brown),-6px -6px 20px var(--pure-black), 6px 6px 20px var(--pure-black);
+
+}

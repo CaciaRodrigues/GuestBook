@@ -60,3 +60,31 @@ body {
     width: 50%;
     height: 100%;
 }
+
+.bloco__pagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.pagina__conteudo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    margin: 0 2rem;
+}
+
+.pagina__conteudo-titulo {
+    font-size: 2.5rem;
+    
+}
+
+hr{
+    width: 80%;
+}
+
+.pagina__conteudo-icones, .pagina__conteudo-texto {
+    font-size: 1.2rem;
+}

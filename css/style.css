@@ -59,14 +59,21 @@ body {
     position: relative;
     width: 50%;
     height: 100%;
-}
-
-.bloco__pagina {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     
+    
+}
+.bloco__pagina-1 {
+    border-right: 1px solid var(--darker-paper);
+    box-shadow: inset -10px 0 15px -8px var(--darker-paper);
+}
+
+.bloco__pagina-2 {
+    border-right: 1px solid var(--darker-paper);
+    box-shadow: inset 10px 0 15px -8px var(--darker-paper);
 }
 
 .pagina__conteudo {
@@ -78,6 +85,7 @@ body {
 
 .pagina__conteudo-titulo {
     font-size: 2.5rem;
+    font-weight: 600;
     
 }
 
@@ -87,4 +95,55 @@ hr{
 
 .pagina__conteudo-icones, .pagina__conteudo-texto {
     font-size: 1.2rem;
+}
+
+.bloco_mensagem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    margin-top: 1.2rem;
+    text-align: left;
+}
+
+.input_nome, .input_mensagem {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% auto;
+    column-gap: .5rem;
+    font-weight: 600;
+}
+
+.nome_caixa {
+    height: 1.2rem;
+    border: 1px solid var(--blush-pink);
+    border-radius: 5px;
+    background-color: var(--warm-white);
+    box-shadow: 3px 3px 4px var(--darker-paper);
+}
+.mensagem_caixa {
+    height: 4rem;
+    border: 1px solid var(--blush-pink);
+    border-radius: 5px;
+    background-color: var(--warm-white);
+    box-shadow: 3px 3px 4px var(--darker-paper);
+}
+
+.nome_caixa:focus , .mensagem_caixa:focus {
+    outline: 1px solid var(--pink-brown);
+}
+
+
+.botao_enviar {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 30%;
+    align-self: center;
+    margin-top: 1.2rem;
+    border: 1.5px solid var(--blush-pink);
+    border-radius: 5px;
+    background-color: var(--warm-white);
+    padding: .4rem;
+    box-shadow: 3px 3px 4px var(--darker-paper);
 }

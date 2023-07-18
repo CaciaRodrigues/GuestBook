@@ -71,16 +71,24 @@ body {
     box-shadow: inset -10px 0 15px -8px var(--darker-paper);
 }
 
+.bloco__pagina-1 >.pagina__conteudo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    margin: 0 2rem;
+}
+
+
 .bloco__pagina-2 {
     border-right: 1px solid var(--darker-paper);
     box-shadow: inset 10px 0 15px -8px var(--darker-paper);
 }
 
-.pagina__conteudo {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.8rem;
-    margin: 0 2rem;
+
+.bloco__pagina-2 > .pagina__conteudo {
+    width: 90%;
+    height: 90%;
+    border: 1px solid var(--darker-paper);
 }
 
 .pagina__conteudo-titulo {
@@ -147,3 +155,29 @@ hr{
     padding: .4rem;
     box-shadow: 3px 3px 4px var(--darker-paper);
 }
+
+.lista_mensagem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+    align-items: center;
+    font-family: var(--secondary-font);
+    letter-spacing: 0.2rem;
+    
+}
+
+.lista_item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    border-bottom: 1px solid var(--blush-pink);
+    padding: .3rem .5rem .5rem .5rem;
+    font-weight: 500;
+    font-size: 1.12rem;
+}
+
+

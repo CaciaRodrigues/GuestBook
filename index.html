@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GuestBook</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header></header>
     <main>
-        <div class="capa">
-            <div class="bloco">
-                <label for="pagina-1" class="bloco__pagina bloco__pagina-1">
-                    <div class="pagina__conteudo">
-                        <h1 class="pagina__conteudo-titulo">Guest Book</h1><hr>
-                        <div class="pagina__conteudo-icones">
-                            <i class="fa-solid fa-book-open"></i>
-                            <i class="fa-solid fa-person"></i>
-                        </div>
-                        <p class="pagina__conteudo-texto">Hope you had a good stay! Leave a message in our Guest Book about it:</p> 
-                        <form class="bloco_mensagem">
-                            <div class="input_nome">
-                                <label for="nome" class="nome_label"> Your Name:</label>
-                                <input type="text" name="nome" id="nome" class="nome_caixa">
-                            </div>
-                            <div class="input_mensagem">
-                                <label for="mensagem" class="mensagem_label">Message:</label>
-                                <textarea type="text" name="mensagem" id="mensagem" class="mensagem_caixa"></textarea>
-                            </div>
-                            <input type="button" value="Write" class="botao_enviar" id="botao_enviar">
-                        </form> 
-                        
-
-                    </div>
-                </label>
-                <label for="pagina-1" class="bloco__pagina bloco__pagina-2">
-                    <div class="pagina__conteudo">
-                        
-                    </div>
-                </label>
+      <div class="capa">
+        <div class="bloco">
+          <label for="pagina-1" class="bloco__pagina bloco__pagina-1">
+            <div class="pagina__conteudo">
+              <h1 class="pagina__conteudo-titulo">Guest Book</h1>
+              <hr />
+              <div class="pagina__conteudo-icones">
+                <i class="fa-solid fa-book-open"></i>
+                <i class="fa-solid fa-person"></i>
+              </div>
+              <p class="pagina__conteudo-texto">
+                Hope you had a good stay! Leave a message in our Guest Book
+                about it:
+              </p>
+              <form class="bloco_mensagem" id="novaMensagem">
+                  <label for="nome" class="nome_label"> Your Name:</label>
+                  <input type="text" name="nome" id="nome" class="nome_caixa" />
+                  <label for="mensagem" class="mensagem_label">Message:</label>
+                  <textarea type="text" name="mensagem" id="mensagem" class="mensagem_caixa"></textarea>
+                  <input type="submit" value="Write" class="botao_enviar" id="botao_enviar"/>
+              </form>
             </div>
+          </label>
+          <label for="pagina-2" class="bloco__pagina bloco__pagina-2">
+            <div class="pagina__conteudo">
+              <ul class="lista_mensagem" id="lista_mensagem"></ul>
+            </div>
+          </label>
         </div>
+      </div>
     </main>
     <footer></footer>
     <script src="/script/main.js"></script>
-</body>
+  </body>
 </html>

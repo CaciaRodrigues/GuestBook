@@ -7,28 +7,30 @@ form.addEventListener('submit', (evento) => {
     const nome = evento.target.elements['nome'];
     const mensagem = evento.target.elements['mensagem'];
 
-    enviarMensagem(nome.value, mensagem.value);
+    const itensMensagem = {
+        nome: nome.value,
+        mensagem: mensagem.value,
+    }
+
+    enviarMensagem(itensMensagem);
 
     nome.value = "";
     mensagem.value = "";
 });
 
-function enviarMensagem(nome, mensagem) {
+function enviarMensagem(item) {
    const novaMensagemHospede = document.createElement('li');
    novaMensagemHospede.classList.add('lista_item');
 
    const nomeHospede = document.createElement('span');
    nomeHospede.classList.add('mensagem_nome');
-   nomeHospede.innerHTML = nome;
+   nomeHospede.innerHTML = item.nome;
    const mensagemHospede = document.createElement('p');
    mensagemHospede.classList.add('mensagem_texto');
-   mensagemHospede.innerHTML = mensagem;
-
-   console.log(mensagemHospede);
+   mensagemHospede.innerHTML = item.mensagem;
 
    novaMensagemHospede.appendChild(nomeHospede);
    novaMensagemHospede.appendChild(mensagemHospede)
 
    paginaMensagens.appendChild(novaMensagemHospede);
 }
-

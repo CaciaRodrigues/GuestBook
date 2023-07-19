@@ -135,10 +135,15 @@ hr{
     border-radius: 5px;
     background-color: var(--warm-white);
     box-shadow: 3px 3px 4px var(--darker-paper);
+    
 }
 
 .nome_caixa:focus , .mensagem_caixa:focus {
     outline: 1px solid var(--pink-brown);
+    background-color: var(--warm-white);
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 
